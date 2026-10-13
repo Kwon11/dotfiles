@@ -17,6 +17,7 @@ in
     jq        # json on the command line
     lazygit
     neovim
+    nodejs    # runtime for pi and other npm-based agent CLIs
     # the font everything renders in
     nerd-fonts.hack
   ];
