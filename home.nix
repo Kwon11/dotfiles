@@ -24,6 +24,10 @@ in
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";
 
+  # npm -g can't write into nodejs's read-only store path, so global installs go here instead.
+  home.file.".npmrc".text = "prefix=${config.home.homeDirectory}/.npm-global\n";
+  home.sessionPath = [ "${config.home.homeDirectory}/.npm-global/bin" ];
+
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;      # ghost text from history
