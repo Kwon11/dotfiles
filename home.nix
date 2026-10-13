@@ -28,7 +28,7 @@ in
     autosuggestion.enable = true;      # ghost text from history
     syntaxHighlighting.enable = true;  # commands turn green when valid
     initContent = ''
-      bindkey '\t' autosuggest-accept
+      bindkey '^f' autosuggest-accept
     '';
     # aliases
     shellAliases = {
